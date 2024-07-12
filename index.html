@@ -1,9 +1,282 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El EnClave</title>
-  </head>
+    <style>
+            .boton-navegacion {
+            padding: 10px 20px;
+            background-color: #007bff9d;
+            color: rgb(0, 0, 0);
+            border: none;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .boton-navegacion:hover {
+            background-color: #0056b3;
+        }
+            .container {
+            display: flex;
+            align-items: start;
+        }
+        body {
+            font-family: Monaco,monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
 
-  <body>
-    <h1>+El EnClave+</h1>
-  </body>
+        header {
+            background-color: #9b0000;
+            color: #051f94;
+            padding: 25px 0;
+            text-align: right;
+            text-decoration: overline;
+        }
+
+        h1 {
+            margin: 8;
+            font-size: 65px;
+            text-decoration: double;
+        }
+
+        nav {
+            background-color: #666;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #0afc52b2;
+            text-decoration: thickness;
+            padding: 10px 20px;
+            margin: 0 5px;
+        }
+
+        nav a:hover {
+            background-color: #00d9ff4b;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #a5a5a55d;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #350f0f;
+            font-size: 30px;
+            margin-top: 50;
+            text-align: center;
+        }
+
+        p {
+            color: #000000;
+        }
+
+        .game {
+            display: flex;
+            margin-bottom: 45px;
+            border-bottom: 1px solid #24ccff;
+            padding-bottom: 18px;
+        }
+
+        .game img {
+            max-width: 200px;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+
+        .game-content {
+            flex-grow: 1;
+        }
+        
+        .texto {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>+El EnClave+</h1>
+    </header>
+    <nav>
+        <a href="#Inicio">Inicio</a>
+        <a href="#Noticias">Noticias</a>
+        <a href="#Reseñas">Reseñas</a>
+        <a href="#Foros">Foros</a>
+    </nav>
+    <section id="Inicio" id="Noticias">
+        <h2>¿Que hay de nuevo viejo?</h2>
+        <div class="container">
+        <div class="game">
+            <img src="d:\UnityOfEnClave\16628e31-a3e0-4e3d-8ff0-d9623081939b.jpg" alt="Algo deberia estar aqui!!"width="480" height="480"/>
+             <div class="game-content">
+                <h3>¿De que trata esto?</h3>
+                <p>¡Bienvenido a nuestra página web de videojuegnaos! El EnClave
+                    Un lugar donde encontraras un espacio dirigido a usuarios de casuales y no tan casuales.
+                    Aquí encontrarás todo lo que necesitas para adentrarte en el universo de los juegos:
+                    desde análisis y noticias hasta guías y recomendaciones. 
+                    Aunque la pagina esta aun en construccion, esperamos que tengas un buen paseo dentro de lo que podemos ofrecerte.
+                    Prepárate para vivir emocionantes aventuras y descubrir nuevas pasiones. ¡Bienvenido a tu portal de entretenimiento gamer!</p>
+                    <p></p>
+                    <h2>¿Que nos ofrece?</h2>
+                    <p>Dentro de nuestros apartados, encontraras lo mas resiente en noticias sobre el mundo del Gaming
+                        Asi mismo, no solo lo que nosotros decimos es algo importante, las opiniones de nuestros usuarios es algo importante para nosotros, 
+                        puesdes pasarte por la seccion de Reseñas. Donde en unos dias estara habilitado el foro para que puedas contactar con otros espectadores y jugadores
+                        De este modo en esas reseñas podras encontrar recomendaciones internas de profesionales y casuales
+
+                        Esperamos ya pronto tener activo el foro y un nuevo apartado que nos ha tomado un poco de tiempo.
+                        Te deseamos nuestro equipo de desarrollo (Osea yo...) que disfrutes de la experencia de esta pagina!
+                    </p>
+                    <button class="boton-navegacion" onclick="irASeccion('Noticias')">Ir a las noticias</button>
+             </div>
+        </div>
+        </div>
+
+    </section>
+    <section id="Noticias" id="Reseñas">
+        <h2>Lo ultimo en el mundo del Gaming</h2>
+        <div class="container">
+        <div class="game">
+           <img src="https://i.3djuegos.com/juegos/15911/fallout_76/fotos/ficha/fallout_76-4689888.webp" alt="Game Image">
+            <div class="game-content">
+                <h3>Fallout 76</h3>
+                <p>Fallout 76 empezó como un Yermo, una tierra baldía sin apenas habitantes y apenas gran cosa por hacer, desprovisto de esa vida propia de un mundo que caracteriza los juegos de rol, 
+                    amén de un bombardeo de fallos técnicos que amargaban la experiencia. 
+                    Sin embargo, Bethesda se embarcó en un viaje del héroe con su propia obra, 
+                    añadiendo contenido continuo desde 2018 hasta a día de hoy. Durante el Summer Games Fest, anunció que cumpliría uno de nuestros sueños hechos realidad: jugar como necrófagos. Además, no es el único as en la manga: desde este 12 de junio disfrutaremos de su próxima expansión Skyline Valley. Desde MeriStation, viajamos a las mismas oficinas del estudio en Londres, donde probamos un primer bocado de un nuevo capítulo que nos pondrá en mayor contacto con los necrófagos y con una peligrosa tormenta.</p>
+                    <p>Skyline Valley parte del misterio que despierta el Refugio 63, sellado hasta el momento. De pronto, su colosal puerta cae del cielo y recibimos una señal de radio para investigar qué sucede. 
+                        Una ominosa tormenta nos da la bienvenida y no se trata precisamente de una simple inconveniencia climática: 
+                        el cielo se tiñe de un rojo oscuro, los relámpagos surcan el cielo, mientras potentes corrientes de viento surcan el aire. 
+                        ¿Cuál es el origen de este desastre?</p>
+                        <p>Por fin, descubriremos qué secretos escondía el misterioso Refugio 63, que una enigmática mujer nos invita a investigar. Su voz raspada nos da cierta pista de su identidad necrófaga, pero oculta algo más. Una vez llegamos al búnker señalado, tendremos una bienvenida no muy cálida, 
+                            pero sí electrificante. 
+                            Es así como nos toparemos con una nueva variedad de necrófagos: los Perdidos</p>
+                            <button class="boton-navegacion" onclick="irASeccion('Reseñas')">Ir a las Reseñas</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <div class="game">
+            <img src="https://i.3djuegos.com/juegos/19728/call_of_duty_black_ops_6/fotos/ficha/call_of_duty_black_ops_6-5892218.webp" alt="Game Image">
+            <div class="game-content">
+                <div class="container">
+                <h3>Call of Duty: Black Ops 6</h3>
+                <p>Durante el reciente Xbox Games Showcase, la presentación de Call of Duty: Black Ops 6 acaparó la atención de todos los asistentes. No es solo que el nuevo CoD llegará de lanzamiento a Game Pass, 
+                    sino que supone un momento crucial para Treyarch con una entrega en la que irán a por todas. Aun así, al margen del contenido o de la fecha de lanzamiento, lo que a muchos llamó la atención fue
+                    el movimiento omnidireccional, un paso adelante en términos de frenetismo y dinamismo que ya abordó la competencia hace tiempo, y que CoD debía dar tarde o temprano.</p>
+                    <p>La saga de acción-shooter multijugador más exitosa del mercado regresa en 2024 con Call of Duty: Black Ops 6. Desarrollado por Treyarch y Raven, 
+                        este videojuego se presenta como un thriller de acción y espionaje ambientado a principios de los 90,
+                         un periodo de transición y agitación en el ámbito político mundial caracterizado por el fin de la Guerra Fría y el auge de Estados Unidos como superpotencia. 
+                         Con una apasionante narrativa y libre de ataduras, la campaña apuesta por ofrecer una mecánica dinámica a cada momento, distintos espacios de juego con escenas impactantes y situaciones, asaltos de alto riesgo y actividades de espionaje clandestinas cargados de acción.</p>
+                        </div>
+                    </div>
+                </div>
+        <div class="container">
+        <div class="game">
+            <img src="https://i.3djuegos.com/juegos/18752/assassin__039_s_creed_codename_red/fotos/ficha/assassin__039_s_creed_codename_red-5890510.webp" alt="Game Image">
+            <div class="game-content">
+                <h3>Assassin's Creed Shadows</h3>
+                <p>Assassin's Creed Shadows es un videojuego de acción en mundo abierto que nos lleva a explorar el Japón Fuedal 
+                    mientras vivimos las las historias entrelazadas de Naoe, una experta Assassin shinobi de la provincia de Iga, y Yasuke, 
+                    el poderoso samurai africano de las leyendas históricas. 
+                    Con los últimos años del turbulento periodo Sengoku como telón de fondo, este dúo peculiar, cada uno con sus propias habilidades para que cada jugador lo desarrolle como guste, 
+                    descubrirá su destino común en los comienzos de una nueva era para Japón.</p>
+                </div>
+            </div>
+        </div>
+		<div class="container">
+	 <div class="game">
+            <img src="https://i.3djuegos.com/juegos/19784/gears_of_war_eday/fotos/ficha/gears_of_war_eday-5896833.webp" alt="Game Image">
+            <div class="game-content">
+                <h3>Gears of War: E-Day</h3>
+                <p>Un nuevo Gears of War viene en camino y el hype está por las nubes, pues luce como el título que hemos esperado durante años. Xbox y The Coalition 
+                    rompieron el Internet con el primer y épico trailer de Gears of War: E-Day, 
+                    donde los jóvenes Marcus Fenix y Dom Santiago presencian el inicio de la invasión Locust.
+
+                    Gears of War: E-Day expandirá aún más el universo de la franquicia, pero no continuará con la historia de Gears 5. The Coalition decidió remontarse a los inicios de la saga 
+                    para entregar una precuela protagonizada por Marcus y Dom, 2 de los personajes más queridos de la serie.
+                    El estudio aclaró que el nuevo juego no es un spin-off, ya que fue planeado como 
+                    la próxima entrega principal de la franquicia. Retomará lo mejor de los juegos pasados, 
+                    sobre todo de la trilogía original, y lo llevará a otro nivel gracias a la nueva tecnología.
+                    En este sentido, Gears of War: E-Day será un nostálgico viaje al pasado. 
+                    Explorará con profundidad el lore de la saga y nos contará los orígenes de algunos de sus héroes y villanos más emblemáticos. 
+                    Por ello, su historia se enfocará en el E-Day o Día de la Emergencia, cuando inicia la invasión Locust.</p>
+            </div>
+        </div>
+    </div>
+    </section>
+    <div class="seccion" id="Noticias">
+    <section id="Reseñas">
+        <h2>¿Y Que opinas..?</h2>
+        <div clas="container">
+            <div class="texto">
+                <p>¿Que te parecio lo nuevo de Fallout 76?</p>
+                <p></p>
+                <p>NoobMaster69: </p>
+                <p class="texto">Pues yo la verdad sin ser muy fan de fallout me lo escogi cuando salió wastelanders con un amigo, nos salio casi regalado
+                y jugando en cooperativo lo disfrutamos mucho.
+                No será el triunfo que dice aquí tampoco, pero es un juego con el que lo pasé bien, pese a sus limitaciones,
+                que son muchas empezando por su engine arcáico que ya se ve en sus juegos más nuevos lo pasado que está. 
+                por lo que siempre me quedará un buen recuerdo de él.
+                Eso sí, tampoco estuve ahí en el desastre de salida, pero está claro que en todos estos años, mimo le han dado algo nuevo de que hablar.
+            </p>
+            </div>
+        </div>
+    </section>
+        <section id="Reseñas">
+        <div class id="Reseñas">
+        <div class="container">
+            <div class="texto">
+                <p>¿Que opinas sobre el nuevo auncio de Call of Duty Black Ops 6?</p>
+                <p></p>
+                <p>Caballo Awitado:</p>
+                <p class="texto">La saga black ops, no me ha decepcionado, ha mantenido un control extricto en su calida, con sus bajas, sin embargo
+                    en esta nueva edicion del juego, exeptuando la falta de informacion, se ve que el juego es prometedor con lo mostrado en el Xbox Games Showcase
+                    y lo unico que le queda a uno como fan es esperar que el juego nos regale una experiencia si bien no nueva de calidad como sus otros produtos.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="Reseñas">
+<div class id="Reseñas">
+    <div class="container">
+        <div class="texto">
+            <p>¿Que opinas sobre el auncio de Gear of War E-Day?</p>
+            <p></p>
+            <p>Yehua Feliz :D:</p>
+            <p class="texto">El juego es muy prometedor, a exepcion del Judment, ha sido tan exepcional, el juego se ve que va hacer entretenido por tener de regreso a los dos
+                los personajes mas importantes de la saga, Marcus Fenix y Doom Santiago, el que nos relaten el inicio de la emerngia donde la tragedia del juego comenzo, es el aire 
+                de frescura que la saga necesita tras el mal sabor de boca que nos dejo el Gears 5
+            </p>
+        </div>
+    </div>
+</div>
+</section>
+<div class="seccion" id="Inicio">
+    <button class="boton-navegacion" onclick="irASeccion('Noticias')">Ir a las Noticias</button>
+    
+    <section id="Foros">
+        <div class="container">
+            <h2>¡Upss...seguimos trabajando!</h2>
+            <img src="d:\UnityOfEnClave\descarga (1).gif" alt="No hay nada que ver aqui amigo..." width="480" height="480"/>
+        </div>
+    </div>
+    </section>
+    <button class="boton-navegacion" onclick="irASeccion('Inicio')">Ir al Inicio</button>
+    <footer>
+        <p>&copy; 2024 Videojuegos Actuales</p>
+    </footer>
+    <script>
+        function irASeccion(idSeccion) {
+            document.getElementById(idSeccion).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+        </script>
+</body>
 </html>
